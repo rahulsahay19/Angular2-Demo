@@ -2,8 +2,8 @@
  * Created by Rahul_Sahay on 8/23/2015.
  */
 
+'use strict';
 
-import * {Component,Template} from 'angular2/angular2';
 function Tagline(){}
 
 Tagline.annotations=[
@@ -19,24 +19,15 @@ function helloAngular(){}
 
 //Defining Annotations
 
-/*
 helloAngular.annotations=[
   new angular.Component({
     selector:"helloAngular"
-    }),
+  }),
   new angular.View({
     directives:[Tagline],
-   template:"<div><h1>Hello Angular 2</h1><message></message></div>"
+    template:"<div><h1>Hello Angular 2</h1><message></message></div>"
   })
 ];
-*/
-
-@Component({
-  selector:'helloAngular'
-})
-@Template({
-  inline:"<div><h1>Hello Angular 2</h1></div>"
-})
 
 //Bootstrapping Components
 
